@@ -1,2 +1,6 @@
 usr.manifest
 upstream.tar
+data
+targets
+results.bin
+results.txt

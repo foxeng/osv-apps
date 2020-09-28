@@ -8,17 +8,24 @@ SRC=upstream/nginx
 
 module: usr.manifest
 
-usr.manifest: $(SRC)/nginx.so
+usr.manifest: $(SRC)/nginx.so data
 	echo '[manifest]' > usr.manifest
 	echo '/nginx.so: $${MODULE_DIR}/$(SRC)/nginx.so' >> usr.manifest
 	echo '/nginx/html/**: $${MODULE_DIR}/upstream/nginx/html/**' >> usr.manifest
 	echo '/nginx/logs/**: $${MODULE_DIR}/upstream/nginx/logs/**' >> usr.manifest
 	echo '/nginx/conf/**: $${MODULE_DIR}/upstream/nginx/conf/**' >> usr.manifest
 	echo '/nginx/conf/nginx.conf: $${MODULE_DIR}/patches/nginx.conf' >> usr.manifest
+	echo '/nginx/conf/nginx-nfs.conf: $${MODULE_DIR}/patches/nginx-nfs.conf' >> usr.manifest
+	echo '/nginx/conf/nginx-virtiofs.conf: $${MODULE_DIR}/patches/nginx-virtiofs.conf' >> usr.manifest
 
 clean:
-	rm -fr upstream
+	rm -fr upstream data targets
 	rm -f upstream.tar usr.manifest
+
+data targets:	# NOTE: These can be generated independently, but they are semantically coupled
+	mkdir -p data
+	truncate -s 0 targets
+	bash -c 'RANDOM=1; for i in {1..10}; do r=$$((RANDOM / 2 + 1)); yes | head -c $${r}K > data/$${i}; echo "GET http://192.168.122.15/$${i}" >> targets; done'
 
 # Note: the touch commands below are needed after commands which create files
 # "in the past", like wget and tar, and can confuse Make to rebuild a target
