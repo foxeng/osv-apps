@@ -1,0 +1,520 @@
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 21.73ms, (+21.73ms)
+	uncompress lzloader.elf: 42.75ms, (+21.02ms)
+	TLS initialization: 43.73ms, (+0.98ms)
+	.init functions: 52.47ms, (+8.74ms)
+	SMP launched: 52.70ms, (+0.23ms)
+	VFS initialized: 55.38ms, (+2.68ms)
+	Network initialized: 55.65ms, (+0.27ms)
+	pvpanic done: 55.80ms, (+0.16ms)
+	pci enumerated: 81.11ms, (+25.30ms)
+	drivers probe: 81.11ms, (+0.01ms)
+	drivers loaded: 185.76ms, (+104.65ms)
+	ZFS mounted: 217.43ms, (+31.67ms)
+	Total time: 218.23ms, (+0.80ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:48:44.713[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:48:44.721[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:48:45.771[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:48:45.839[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 56ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:48:46.468[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:48:46.482[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:48:46.486[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:48:46.551[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:48:46.555[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1732 ms
+[2m2020-10-07 10:48:46.859[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:48:46.873[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:48:47.145[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:48:47.199[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:48:47.259[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:48:47.331[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:48:47.426[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:48:47.590[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:48:48.155[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:48:48.166[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:48:48.214[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:48:48.258[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:48:48.263[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:48:48.458[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:48:48.474[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.355 seconds (JVM running for 4.897)
+qemu-system-x86_64: terminating on signal 15 from pid 29493 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 21.32ms, (+21.32ms)
+	uncompress lzloader.elf: 41.57ms, (+20.24ms)
+	TLS initialization: 42.56ms, (+0.99ms)
+	.init functions: 51.31ms, (+8.75ms)
+	SMP launched: 51.58ms, (+0.28ms)
+	VFS initialized: 54.43ms, (+2.84ms)
+	Network initialized: 54.68ms, (+0.26ms)
+	pvpanic done: 54.86ms, (+0.17ms)
+	pci enumerated: 117.41ms, (+62.56ms)
+	drivers probe: 117.42ms, (+0.01ms)
+	drivers loaded: 200.42ms, (+83.00ms)
+	ZFS mounted: 232.87ms, (+32.45ms)
+	Total time: 233.65ms, (+0.79ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:48:55.007[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:48:55.015[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:48:56.215[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:48:56.270[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 43ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:48:56.919[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:48:56.934[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:48:56.938[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:48:57.022[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:48:57.026[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1873 ms
+[2m2020-10-07 10:48:57.319[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:48:57.334[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:48:57.640[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:48:57.729[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:48:57.783[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:48:57.811[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:48:58.040[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:48:58.202[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:48:58.810[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:48:58.823[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:48:58.861[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:48:58.934[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:48:58.939[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:48:59.179[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:48:59.191[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.703 seconds (JVM running for 5.327)
+qemu-system-x86_64: terminating on signal 15 from pid 29548 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 21.18ms, (+21.18ms)
+	uncompress lzloader.elf: 41.66ms, (+20.48ms)
+	TLS initialization: 42.43ms, (+0.77ms)
+	.init functions: 50.91ms, (+8.48ms)
+	SMP launched: 51.15ms, (+0.24ms)
+	VFS initialized: 54.03ms, (+2.88ms)
+	Network initialized: 54.29ms, (+0.26ms)
+	pvpanic done: 54.46ms, (+0.18ms)
+	pci enumerated: 106.63ms, (+52.17ms)
+	drivers probe: 106.64ms, (+0.01ms)
+	drivers loaded: 192.39ms, (+85.76ms)
+	ZFS mounted: 223.63ms, (+31.23ms)
+	Total time: 224.44ms, (+0.81ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:49:05.422[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:49:05.430[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:49:06.564[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:49:06.637[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 59ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:49:07.260[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:49:07.274[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:49:07.277[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:49:07.339[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:49:07.342[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1862 ms
+[2m2020-10-07 10:49:07.631[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:49:07.647[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:49:07.922[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:49:08.053[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:49:08.107[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:49:08.196[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:49:08.372[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:49:08.642[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:49:09.388[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:49:09.400[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:49:09.453[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:49:09.495[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:49:09.500[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:49:09.688[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:49:09.699[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.895 seconds (JVM running for 5.558)
+qemu-system-x86_64: terminating on signal 15 from pid 29592 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 22.29ms, (+22.29ms)
+	uncompress lzloader.elf: 42.66ms, (+20.37ms)
+	TLS initialization: 43.72ms, (+1.06ms)
+	.init functions: 52.67ms, (+8.95ms)
+	SMP launched: 52.92ms, (+0.25ms)
+	VFS initialized: 55.67ms, (+2.75ms)
+	Network initialized: 55.94ms, (+0.27ms)
+	pvpanic done: 56.26ms, (+0.32ms)
+	pci enumerated: 97.18ms, (+40.92ms)
+	drivers probe: 97.18ms, (+0.01ms)
+	drivers loaded: 179.31ms, (+82.13ms)
+	ZFS mounted: 211.95ms, (+32.64ms)
+	Total time: 212.79ms, (+0.84ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:49:15.501[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:49:15.509[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:49:16.649[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:49:16.734[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 65ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:49:17.400[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:49:17.431[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:49:17.434[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:49:17.499[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:49:17.504[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1946 ms
+[2m2020-10-07 10:49:17.810[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:49:17.825[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:49:18.109[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:49:18.165[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:49:18.218[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:49:18.301[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:49:18.366[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:49:18.521[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:49:19.178[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:49:19.189[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:49:19.254[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:49:19.310[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:49:19.315[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:49:19.512[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:49:19.525[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.529 seconds (JVM running for 5.103)
+qemu-system-x86_64: terminating on signal 15 from pid 29629 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 20.25ms, (+20.25ms)
+	uncompress lzloader.elf: 40.57ms, (+20.31ms)
+	TLS initialization: 41.60ms, (+1.04ms)
+	.init functions: 50.17ms, (+8.56ms)
+	SMP launched: 50.42ms, (+0.26ms)
+	VFS initialized: 53.25ms, (+2.83ms)
+	Network initialized: 53.51ms, (+0.26ms)
+	pvpanic done: 53.68ms, (+0.17ms)
+	pci enumerated: 81.74ms, (+28.06ms)
+	drivers probe: 81.75ms, (+0.01ms)
+	drivers loaded: 206.82ms, (+125.07ms)
+	ZFS mounted: 237.82ms, (+31.00ms)
+	Total time: 238.72ms, (+0.90ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:49:25.821[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:49:25.828[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:49:26.870[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:49:26.934[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 52ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:49:27.466[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:49:27.482[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:49:27.485[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:49:27.554[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:49:27.558[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1661 ms
+[2m2020-10-07 10:49:27.814[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:49:27.831[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:49:28.110[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:49:28.172[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:49:28.240[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:49:28.270[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:49:28.440[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:49:28.723[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:49:29.305[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:49:29.319[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:49:29.360[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:49:29.406[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:49:29.411[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:49:29.623[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:49:29.636[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.28 seconds (JVM running for 4.85)
+qemu-system-x86_64: terminating on signal 15 from pid 29674 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 21.95ms, (+21.95ms)
+	uncompress lzloader.elf: 42.85ms, (+20.90ms)
+	TLS initialization: 43.75ms, (+0.91ms)
+	.init functions: 52.42ms, (+8.66ms)
+	SMP launched: 52.67ms, (+0.25ms)
+	VFS initialized: 55.43ms, (+2.77ms)
+	Network initialized: 55.69ms, (+0.26ms)
+	pvpanic done: 55.86ms, (+0.16ms)
+	pci enumerated: 92.51ms, (+36.65ms)
+	drivers probe: 92.51ms, (+0.01ms)
+	drivers loaded: 174.44ms, (+81.93ms)
+	ZFS mounted: 203.15ms, (+28.71ms)
+	Total time: 203.94ms, (+0.79ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:49:36.167[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:49:36.189[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:49:37.490[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:49:37.556[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 52ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:49:38.424[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:49:38.439[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:49:38.442[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:49:38.508[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:49:38.511[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2215 ms
+[2m2020-10-07 10:49:38.754[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:49:38.768[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:49:39.092[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:49:39.147[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:49:39.206[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:49:39.242[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:49:39.379[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:49:39.568[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:49:40.233[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:49:40.245[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:49:40.286[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:49:40.325[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:49:40.329[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:49:40.525[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:49:40.540[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.866 seconds (JVM running for 5.486)
+qemu-system-x86_64: terminating on signal 15 from pid 29719 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 21.25ms, (+21.25ms)
+	uncompress lzloader.elf: 42.04ms, (+20.79ms)
+	TLS initialization: 42.96ms, (+0.91ms)
+	.init functions: 51.76ms, (+8.80ms)
+	SMP launched: 52.01ms, (+0.25ms)
+	VFS initialized: 55.13ms, (+3.12ms)
+	Network initialized: 55.23ms, (+0.11ms)
+	pvpanic done: 55.40ms, (+0.16ms)
+	pci enumerated: 92.51ms, (+37.11ms)
+	drivers probe: 92.51ms, (+0.01ms)
+	drivers loaded: 174.61ms, (+82.09ms)
+	ZFS mounted: 205.24ms, (+30.64ms)
+	Total time: 206.19ms, (+0.95ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:49:46.369[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:49:46.377[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:49:47.469[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:49:47.524[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 44ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:49:48.111[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:49:48.127[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:49:48.131[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:49:48.188[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:49:48.192[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1768 ms
+[2m2020-10-07 10:49:48.511[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:49:48.527[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:49:48.792[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:49:48.845[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:49:48.908[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:49:48.912[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:49:49.044[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:49:49.182[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:49:49.761[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:49:49.778[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:49:49.850[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:49:49.890[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:49:49.895[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:49:50.097[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:49:50.109[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.246 seconds (JVM running for 4.779)
+qemu-system-x86_64: terminating on signal 15 from pid 29759 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 21.11ms, (+21.11ms)
+	uncompress lzloader.elf: 41.65ms, (+20.54ms)
+	TLS initialization: 42.82ms, (+1.17ms)
+	.init functions: 51.40ms, (+8.58ms)
+	SMP launched: 51.66ms, (+0.26ms)
+	VFS initialized: 54.46ms, (+2.80ms)
+	Network initialized: 54.72ms, (+0.26ms)
+	pvpanic done: 55.04ms, (+0.32ms)
+	pci enumerated: 105.15ms, (+50.11ms)
+	drivers probe: 105.15ms, (+0.01ms)
+	drivers loaded: 214.15ms, (+109.00ms)
+	ZFS mounted: 246.64ms, (+32.48ms)
+	Total time: 247.44ms, (+0.80ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:49:56.806[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:49:56.834[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:49:58.052[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:49:58.120[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 56ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:49:58.809[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:49:58.824[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:49:58.827[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:49:58.891[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:49:58.895[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1999 ms
+[2m2020-10-07 10:49:59.176[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:49:59.193[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:49:59.522[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:49:59.581[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:49:59.638[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:49:59.717[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:49:59.859[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:50:00.082[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:50:00.794[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:50:00.807[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:50:00.847[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:50:00.903[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:50:00.909[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:50:01.108[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:50:01.119[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.843 seconds (JVM running for 5.444)
+qemu-system-x86_64: terminating on signal 15 from pid 29800 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 19.98ms, (+19.98ms)
+	uncompress lzloader.elf: 40.76ms, (+20.78ms)
+	TLS initialization: 41.87ms, (+1.10ms)
+	.init functions: 50.64ms, (+8.77ms)
+	SMP launched: 50.86ms, (+0.22ms)
+	VFS initialized: 53.73ms, (+2.87ms)
+	Network initialized: 54.04ms, (+0.31ms)
+	pvpanic done: 54.34ms, (+0.30ms)
+	pci enumerated: 97.00ms, (+42.66ms)
+	drivers probe: 97.05ms, (+0.05ms)
+	drivers loaded: 178.45ms, (+81.40ms)
+	ZFS mounted: 210.29ms, (+31.84ms)
+	Total time: 211.16ms, (+0.88ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:50:07.001[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:50:07.009[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:50:08.289[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:50:08.354[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 54ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:50:09.040[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:50:09.055[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:50:09.058[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:50:09.136[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:50:09.141[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2057 ms
+[2m2020-10-07 10:50:09.451[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:50:09.467[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:50:09.769[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:50:09.823[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:50:09.881[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:50:09.918[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:50:10.089[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:50:10.362[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:50:11.132[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:50:11.143[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:50:11.191[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:50:11.244[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:50:11.248[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:50:11.483[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:50:11.497[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.982 seconds (JVM running for 5.54)
+qemu-system-x86_64: terminating on signal 15 from pid 29841 (python3)
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+	disk read (real mode): 21.08ms, (+21.08ms)
+	uncompress lzloader.elf: 41.54ms, (+20.46ms)
+	TLS initialization: 42.37ms, (+0.83ms)
+	.init functions: 50.88ms, (+8.51ms)
+	SMP launched: 51.12ms, (+0.24ms)
+	VFS initialized: 53.91ms, (+2.79ms)
+	Network initialized: 54.17ms, (+0.26ms)
+	pvpanic done: 54.34ms, (+0.17ms)
+	pci enumerated: 95.98ms, (+41.63ms)
+	drivers probe: 95.98ms, (+0.01ms)
+	drivers loaded: 181.74ms, (+85.75ms)
+	ZFS mounted: 212.79ms, (+31.05ms)
+	Total time: 213.48ms, (+0.69ms)
+Cmdline: /java.so -Xms128m -Xmx128m -jar spring-boot-2-rest-service-basic.jar
+java.so: Starting JVM app using: io/osv/nonisolated/RunNonIsolatedJvmApp
+java.so: Setting Java system classloader to NonIsolatingOsvSystemClassLoader
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.4.RELEASE)[0;39m
+
+[2m2020-10-07 10:50:17.332[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Starting SpringBoot2RestServiceApplication v0.0.1-SNAPSHOT on localhost with PID 0 (/spring-boot-2-rest-service-basic.jar started by osv in /)
+[2m2020-10-07 10:50:17.357[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2020-10-07 10:50:18.500[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2020-10-07 10:50:18.580[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 68ms. Found 1 JPA repository interfaces.
+[2m2020-10-07 10:50:19.303[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2020-10-07 10:50:19.318[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2020-10-07 10:50:19.322[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2m2020-10-07 10:50:19.381[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2020-10-07 10:50:19.385[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1979 ms
+[2m2020-10-07 10:50:19.670[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2020-10-07 10:50:19.686[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2020-10-07 10:50:20.004[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2020-10-07 10:50:20.101[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2020-10-07 10:50:20.157[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.4.21.Final
+[2m2020-10-07 10:50:20.240[0;39m [33m WARN[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2020-10-07 10:50:20.338[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2m2020-10-07 10:50:20.493[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2m2020-10-07 10:50:21.181[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2020-10-07 10:50:21.195[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2020-10-07 10:50:21.238[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2020-10-07 10:50:21.300[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2020-10-07 10:50:21.304[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories?
+[2m2020-10-07 10:50:21.513[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2020-10-07 10:50:21.526[0;39m [32m INFO[0;39m [35m0[0;39m [2m---[0;39m [2m[       Thread-1][0;39m [36m.s.r.e.SpringBoot2RestServiceApplication[0;39m [2m:[0;39m Started SpringBoot2RestServiceApplication in 4.705 seconds (JVM running for 5.321)
+qemu-system-x86_64: terminating on signal 15 from pid 29885 (python3)
