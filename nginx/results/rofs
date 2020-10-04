@@ -1,0 +1,433 @@
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 158.04 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:02:30 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:02:30 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32374 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7626.37 msec task-clock                #    0.678 CPUs utilized          
+
+      11.253336391 seconds time elapsed
+
+       6.929858000 seconds user
+       0.851965000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 203042816 193794048
+perf stat vhost:
+
+ Performance counter stats for process id '32397':
+
+           2626.40 msec task-clock                #    0.219 CPUs utilized          
+
+      12.001222907 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1889, 188.87, 188.05
+Duration      [total, attack, wait]             10.045s, 10.001s, 43.551ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  1.501ms, 106.178ms, 33.165ms, 126.229ms, 268.954ms, 3.513s, 5.217s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1889  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 180.38 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:02:42 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:02:42 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32437 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7608.95 msec task-clock                #    0.673 CPUs utilized          
+
+      11.302964069 seconds time elapsed
+
+       6.893339000 seconds user
+       0.819663000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 202752000 193671168
+perf stat vhost:
+
+ Performance counter stats for process id '32458':
+
+           2623.54 msec task-clock                #    0.219 CPUs utilized          
+
+      12.001390115 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1888, 188.80, 188.33
+Duration      [total, attack, wait]             10.025s, 10s, 24.518ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.406ms, 106.127ms, 29.487ms, 129.187ms, 320.97ms, 3.179s, 5.823s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1888  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 198.45 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:02:54 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:02:54 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32498 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           6576.98 msec task-clock                #    0.580 CPUs utilized          
+
+      11.336430667 seconds time elapsed
+
+       6.199734000 seconds user
+       0.393046000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 196677632 187621376
+perf stat vhost:
+
+ Performance counter stats for process id '32520':
+
+           2545.81 msec task-clock                #    0.212 CPUs utilized          
+
+      12.001367015 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1863, 186.21, 185.26
+Duration      [total, attack, wait]             10.056s, 10.005s, 51.562ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.615ms, 107.74ms, 30.071ms, 97.459ms, 287.797ms, 3.4s, 6.675s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1863  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 178.46 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:03:06 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:03:06 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32561 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           6359.99 msec task-clock                #    0.565 CPUs utilized          
+
+      11.263062977 seconds time elapsed
+
+       6.018950000 seconds user
+       0.359515000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 200642560 191533056
+perf stat vhost:
+
+ Performance counter stats for process id '32583':
+
+           2515.42 msec task-clock                #    0.210 CPUs utilized          
+
+      12.001365427 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1862, 186.20, 185.83
+Duration      [total, attack, wait]             10.02s, 10s, 19.472ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  4.172ms, 107.579ms, 25.167ms, 67.888ms, 255.518ms, 3.794s, 6.38s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1862  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 171.64 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:03:18 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:03:18 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32625 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7992.26 msec task-clock                #    0.710 CPUs utilized          
+
+      11.259508396 seconds time elapsed
+
+       7.195371000 seconds user
+       0.917109000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 202702848 193703936
+perf stat vhost:
+
+ Performance counter stats for process id '32646':
+
+           2640.42 msec task-clock                #    0.220 CPUs utilized          
+
+      12.001321918 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1898, 189.76, 189.42
+Duration      [total, attack, wait]             10.02s, 10.002s, 17.989ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  1.956ms, 105.548ms, 30.552ms, 128.477ms, 298.852ms, 3.097s, 4.85s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1898  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 158.24 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:03:31 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:03:31 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32689 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7685.44 msec task-clock                #    0.678 CPUs utilized          
+
+      11.342821928 seconds time elapsed
+
+       7.014411000 seconds user
+       0.812777000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 204902400 195932160
+perf stat vhost:
+
+ Performance counter stats for process id '32725':
+
+           2643.51 msec task-clock                #    0.220 CPUs utilized          
+
+      12.001452473 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1897, 189.70, 189.05
+Duration      [total, attack, wait]             10.034s, 10s, 34.338ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  1.57ms, 105.698ms, 34.406ms, 127.672ms, 263.556ms, 3.048s, 5.319s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1897  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 193.04 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:03:43 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:03:43 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32771 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7608.21 msec task-clock                #    0.673 CPUs utilized          
+
+      11.309785872 seconds time elapsed
+
+       6.930516000 seconds user
+       0.825525000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 205320192 196153344
+perf stat vhost:
+
+ Performance counter stats for process id '32792':
+
+           2632.04 msec task-clock                #    0.219 CPUs utilized          
+
+      12.001428197 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1891, 189.08, 188.53
+Duration      [total, attack, wait]             10.03s, 10.001s, 29.307ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.062ms, 105.992ms, 33.416ms, 112.137ms, 266.418ms, 3.433s, 5.273s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1891  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 171.07 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:03:55 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:03:55 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32834 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7536.24 msec task-clock                #    0.667 CPUs utilized          
+
+      11.296700305 seconds time elapsed
+
+       6.855806000 seconds user
+       0.815295000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 202903552 193724416
+perf stat vhost:
+
+ Performance counter stats for process id '32856':
+
+           2621.01 msec task-clock                #    0.218 CPUs utilized          
+
+      12.001461910 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1880, 187.95, 187.39
+Duration      [total, attack, wait]             10.032s, 10.003s, 29.673ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.906ms, 106.649ms, 31.221ms, 121.994ms, 294.448ms, 3.244s, 5.702s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1880  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 190.18 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:04:07 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:04:07 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32896 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7505.66 msec task-clock                #    0.662 CPUs utilized          
+
+      11.336534229 seconds time elapsed
+
+       6.963758000 seconds user
+       0.684924000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 202932224 193949696
+perf stat vhost:
+
+ Performance counter stats for process id '32917':
+
+           2625.31 msec task-clock                #    0.219 CPUs utilized          
+
+      12.001402735 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1891, 189.02, 188.43
+Duration      [total, attack, wait]             10.035s, 10.004s, 31.118ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.634ms, 106.065ms, 34.303ms, 106.071ms, 277.514ms, 3.49s, 5.379s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1891  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 186.40 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+nginx: [alert] could not open error log file: open() "/nginx//logs/error.log" failed (30: Read-only file system)
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:04:20 [emerg] 0#54: initgroups(nobody, 0) failed
+2020/10/07 11:04:20 [alert] 0#54: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32958 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           6321.22 msec task-clock                #    0.560 CPUs utilized          
+
+      11.293120161 seconds time elapsed
+
+       5.900255000 seconds user
+       0.441358000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 198791168 189722624
+perf stat vhost:
+
+ Performance counter stats for process id '32979':
+
+           2531.33 msec task-clock                #    0.211 CPUs utilized          
+
+      12.001348749 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1875, 187.48, 186.61
+Duration      [total, attack, wait]             10.048s, 10.001s, 46.777ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.089ms, 106.996ms, 29.411ms, 79.559ms, 304.815ms, 3.512s, 5.286s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1875  
+Error Set:
+

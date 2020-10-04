@@ -1,0 +1,426 @@
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 199.44 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:00:28 [emerg] 0#221: initgroups(nobody, 0) failed
+2020/10/07 11:00:28 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 31731 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7167.36 msec task-clock                #    0.629 CPUs utilized          
+
+      11.401197191 seconds time elapsed
+
+       6.886811000 seconds user
+       0.542103000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 192622592 183562240
+perf stat vhost:
+
+ Performance counter stats for process id '31754':
+
+           1385.56 msec task-clock                #    0.115 CPUs utilized          
+
+      12.001403362 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         999, 99.83, 98.57
+Duration      [total, attack, wait]             10.135s, 10.007s, 128.534ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  1.969ms, 202.353ms, 23.75ms, 41.16ms, 177.35ms, 5.097s, 10.133s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:999  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 207.76 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:00:40 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:00:40 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 31798 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7384.30 msec task-clock                #    0.648 CPUs utilized          
+
+      11.403182604 seconds time elapsed
+
+       7.088815000 seconds user
+       0.547363000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 184082432 175067136
+perf stat vhost:
+
+ Performance counter stats for process id '31819':
+
+           1433.18 msec task-clock                #    0.119 CPUs utilized          
+
+      12.001276124 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1016, 101.55, 100.31
+Duration      [total, attack, wait]             10.129s, 10.004s, 124.335ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  5.605ms, 198.896ms, 23.753ms, 28.903ms, 90.187ms, 5.3s, 10.127s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1016  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 214.88 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:00:52 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:00:52 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 31861 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           8144.33 msec task-clock                #    0.715 CPUs utilized          
+
+      11.390268759 seconds time elapsed
+
+       7.554741000 seconds user
+       0.828682000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 196788224 187691008
+perf stat vhost:
+
+ Performance counter stats for process id '31882':
+
+           1440.12 msec task-clock                #    0.120 CPUs utilized          
+
+      12.001365279 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1006, 100.53, 99.70
+Duration      [total, attack, wait]             10.09s, 10.007s, 83.507ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.433ms, 200.259ms, 17.324ms, 67.438ms, 139.336ms, 5.126s, 9.527s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1006  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 208.35 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:01:04 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:01:04 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 31925 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7402.77 msec task-clock                #    0.652 CPUs utilized          
+
+      11.346798187 seconds time elapsed
+
+       6.981683000 seconds user
+       0.581164000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 188256256 179200000
+perf stat vhost:
+
+ Performance counter stats for process id '31946':
+
+           1409.85 msec task-clock                #    0.117 CPUs utilized          
+
+      12.001429602 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1011, 101.08, 99.96
+Duration      [total, attack, wait]             10.114s, 10.002s, 112.345ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  4.592ms, 199.305ms, 23.417ms, 28.52ms, 87.084ms, 4.88s, 10.112s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1011  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 203.85 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:01:17 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:01:17 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 31987 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           8010.50 msec task-clock                #    0.706 CPUs utilized          
+
+      11.349936872 seconds time elapsed
+
+       7.495003000 seconds user
+       0.761625000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 184086528 174977024
+perf stat vhost:
+
+ Performance counter stats for process id '32009':
+
+           1443.42 msec task-clock                #    0.120 CPUs utilized          
+
+      12.001427093 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1003, 100.30, 99.13
+Duration      [total, attack, wait]             10.118s, 10s, 117.917ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  3.662ms, 201.249ms, 16.527ms, 23.681ms, 74.393ms, 4.871s, 10.116s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1003  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 215.23 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:01:29 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:01:29 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32050 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           8156.44 msec task-clock                #    0.712 CPUs utilized          
+
+      11.456781270 seconds time elapsed
+
+       7.586211000 seconds user
+       0.807850000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 183832576 174710784
+perf stat vhost:
+
+ Performance counter stats for process id '32071':
+
+           1462.94 msec task-clock                #    0.122 CPUs utilized          
+
+      12.001490701 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1022, 102.17, 100.79
+Duration      [total, attack, wait]             10.139s, 10.003s, 136.051ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  8.83ms, 197.495ms, 33.439ms, 49.486ms, 116.344ms, 5.146s, 10.126s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1022  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 209.33 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:01:41 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:01:41 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32112 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7014.42 msec task-clock                #    0.616 CPUs utilized          
+
+      11.383291197 seconds time elapsed
+
+       6.759464000 seconds user
+       0.515044000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 182153216 172974080
+perf stat vhost:
+
+ Performance counter stats for process id '32133':
+
+           1372.44 msec task-clock                #    0.114 CPUs utilized          
+
+      12.001372383 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         999, 99.85, 98.59
+Duration      [total, attack, wait]             10.133s, 10.005s, 128.046ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  8.159ms, 202.359ms, 16.793ms, 24.028ms, 108.801ms, 5.225s, 10.13s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:999  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 225.65 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:01:53 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:01:53 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32176 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7809.59 msec task-clock                #    0.682 CPUs utilized          
+
+      11.453251215 seconds time elapsed
+
+       7.376074000 seconds user
+       0.740540000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 182251520 173117440
+perf stat vhost:
+
+ Performance counter stats for process id '32198':
+
+           1471.30 msec task-clock                #    0.123 CPUs utilized          
+
+      12.001399310 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1015, 101.42, 100.25
+Duration      [total, attack, wait]             10.125s, 10.008s, 116.81ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  1.123ms, 198.872ms, 23.609ms, 28.409ms, 86.038ms, 5.17s, 10.123s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1015  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 207.67 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:02:05 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:02:05 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32239 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7720.04 msec task-clock                #    0.681 CPUs utilized          
+
+      11.343321464 seconds time elapsed
+
+       7.299234000 seconds user
+       0.726872000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 181850112 172818432
+perf stat vhost:
+
+ Performance counter stats for process id '32260':
+
+           1435.60 msec task-clock                #    0.120 CPUs utilized          
+
+      12.001292013 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1005, 100.48, 99.45
+Duration      [total, attack, wait]             10.106s, 10.002s, 103.662ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  3.634ms, 200.595ms, 16.651ms, 23.566ms, 36.378ms, 10.06s, 10.105s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1005  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 209.24 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:02:18 [emerg] 0#221: initgroups(nobody, 0) failed (17: File exists)
+2020/10/07 11:02:18 [alert] 0#221: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 32301 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7825.62 msec task-clock                #    0.687 CPUs utilized          
+
+      11.393340996 seconds time elapsed
+
+       7.339569000 seconds user
+       0.791375000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 188145664 179134464
+perf stat vhost:
+
+ Performance counter stats for process id '32322':
+
+           1432.23 msec task-clock                #    0.119 CPUs utilized          
+
+      12.001246303 seconds time elapsed
+
+
+Requests      [total, rate, throughput]         1004, 100.36, 99.41
+Duration      [total, attack, wait]             10.1s, 10.004s, 95.5ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  5.977ms, 200.72ms, 16.835ms, 24.408ms, 64.528ms, 5.373s, 10.098s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1004  
+Error Set:
+

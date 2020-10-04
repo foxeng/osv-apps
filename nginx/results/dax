@@ -1,0 +1,563 @@
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 201.73 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:08:36 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:08:36 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34364 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           6298.17 msec task-clock                #    0.553 CPUs utilized          
+
+      11.379894431 seconds time elapsed
+
+       5.876537000 seconds user
+       0.440267000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 190574592 174075904
+perf stat vhost:
+
+ Performance counter stats for process id '34391':
+
+           2238.04 msec task-clock                #    0.186 CPUs utilized          
+
+      12.001296548 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            115.67 msec task-clock                #    0.010 CPUs utilized          
+
+      11.432628397 seconds time elapsed
+
+       0.051711000 seconds user
+       0.104269000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1630208 196608
+Requests      [total, rate, throughput]         1497, 149.61, 148.87
+Duration      [total, attack, wait]             10.056s, 10.006s, 49.742ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  3.079ms, 134.133ms, 42.753ms, 207.446ms, 290.871ms, 4.462s, 4.734s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1497  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 210.87 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:08:49 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:08:49 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34436 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7554.39 msec task-clock                #    0.666 CPUs utilized          
+
+      11.343338666 seconds time elapsed
+
+       6.858376000 seconds user
+       0.844252000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 188579840 173137920
+perf stat vhost:
+
+ Performance counter stats for process id '34463':
+
+           2292.25 msec task-clock                #    0.191 CPUs utilized          
+
+      12.001351563 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            115.94 msec task-clock                #    0.010 CPUs utilized          
+
+      11.394651663 seconds time elapsed
+
+       0.069466000 seconds user
+       0.082672000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1753088 200704
+Requests      [total, rate, throughput]         1512, 151.18, 149.91
+Duration      [total, attack, wait]             10.086s, 10.001s, 85.025ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.25ms, 132.811ms, 43.721ms, 192.057ms, 275.331ms, 4.48s, 4.933s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1512  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 221.18 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:09:01 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:09:01 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34506 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7635.20 msec task-clock                #    0.676 CPUs utilized          
+
+      11.296652988 seconds time elapsed
+
+       6.955374000 seconds user
+       0.810270000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 194318336 176099328
+perf stat vhost:
+
+ Performance counter stats for process id '34533':
+
+           2278.26 msec task-clock                #    0.190 CPUs utilized          
+
+      12.001425458 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            116.55 msec task-clock                #    0.010 CPUs utilized          
+
+      11.345396577 seconds time elapsed
+
+       0.037255000 seconds user
+       0.114227000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1757184 245760
+Requests      [total, rate, throughput]         1500, 149.89, 149.56
+Duration      [total, attack, wait]             10.029s, 10.007s, 21.837ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.227ms, 133.605ms, 40.661ms, 199.057ms, 281.874ms, 4.508s, 4.872s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1500  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 217.16 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:09:13 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:09:13 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34576 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7398.93 msec task-clock                #    0.655 CPUs utilized          
+
+      11.299452375 seconds time elapsed
+
+       6.720367000 seconds user
+       0.821250000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 190861312 173568000
+perf stat vhost:
+
+ Performance counter stats for process id '34603':
+
+           2280.96 msec task-clock                #    0.190 CPUs utilized          
+
+      12.001435135 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            117.97 msec task-clock                #    0.010 CPUs utilized          
+
+      11.338927510 seconds time elapsed
+
+       0.044937000 seconds user
+       0.108948000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1687552 184320
+Requests      [total, rate, throughput]         1501, 150.07, 149.47
+Duration      [total, attack, wait]             10.042s, 10.002s, 39.897ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  1.934ms, 133.603ms, 41.824ms, 199.002ms, 273.196ms, 4.528s, 4.739s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1501  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 209.82 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:09:25 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:09:25 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34643 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           6107.12 msec task-clock                #    0.535 CPUs utilized          
+
+      11.412826711 seconds time elapsed
+
+       5.713781000 seconds user
+       0.404514000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 193183744 174120960
+perf stat vhost:
+
+ Performance counter stats for process id '34670':
+
+           2204.03 msec task-clock                #    0.184 CPUs utilized          
+
+      12.001533786 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            116.14 msec task-clock                #    0.010 CPUs utilized          
+
+      11.438848281 seconds time elapsed
+
+       0.063376000 seconds user
+       0.094533000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1691648 176128
+Requests      [total, rate, throughput]         1486, 148.52, 147.77
+Duration      [total, attack, wait]             10.056s, 10.005s, 50.696ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  1.796ms, 135.078ms, 42.986ms, 208.46ms, 283.845ms, 4.446s, 4.7s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1486  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 235.43 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:09:38 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:09:38 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34713 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7499.20 msec task-clock                #    0.661 CPUs utilized          
+
+      11.346262590 seconds time elapsed
+
+       6.846054000 seconds user
+       0.807405000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 190783488 173735936
+perf stat vhost:
+
+ Performance counter stats for process id '34740':
+
+           2289.83 msec task-clock                #    0.191 CPUs utilized          
+
+      12.001549529 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            115.92 msec task-clock                #    0.010 CPUs utilized          
+
+      11.388872221 seconds time elapsed
+
+       0.041244000 seconds user
+       0.112387000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1757184 208896
+Requests      [total, rate, throughput]         1506, 150.58, 149.36
+Duration      [total, attack, wait]             10.083s, 10.001s, 81.525ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.238ms, 133.49ms, 41.967ms, 203.286ms, 271.045ms, 4.488s, 4.693s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1506  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 213.99 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:09:50 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:09:50 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34783 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7439.32 msec task-clock                #    0.654 CPUs utilized          
+
+      11.383447000 seconds time elapsed
+
+       6.733532000 seconds user
+       0.854625000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 191242240 171769856
+perf stat vhost:
+
+ Performance counter stats for process id '34810':
+
+           2293.47 msec task-clock                #    0.191 CPUs utilized          
+
+      12.001391976 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            119.58 msec task-clock                #    0.010 CPUs utilized          
+
+      11.435823315 seconds time elapsed
+
+       0.040958000 seconds user
+       0.116353000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1634304 221184
+Requests      [total, rate, throughput]         1505, 150.42, 149.51
+Duration      [total, attack, wait]             10.066s, 10.006s, 60.277ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.105ms, 133.5ms, 40.447ms, 196.86ms, 286.585ms, 4.487s, 4.903s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1505  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 218.47 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:10:02 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:10:02 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34853 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           6251.64 msec task-clock                #    0.549 CPUs utilized          
+
+      11.383072774 seconds time elapsed
+
+       5.815023000 seconds user
+       0.454371000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+run.py: INFO: waiting for vhost kernel thread to launch
+
+Memory usage stats for qemu: 193781760 172920832
+perf stat vhost:
+
+ Performance counter stats for process id '34880':
+
+           2212.82 msec task-clock                #    0.184 CPUs utilized          
+
+      12.001336298 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            115.91 msec task-clock                #    0.010 CPUs utilized          
+
+      11.417798623 seconds time elapsed
+
+       0.061447000 seconds user
+       0.095982000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1630208 200704
+Requests      [total, rate, throughput]         1482, 148.19, 147.77
+Duration      [total, attack, wait]             10.029s, 10.001s, 28.38ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.84ms, 135.247ms, 38.817ms, 208.703ms, 317.84ms, 4.469s, 4.811s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1482  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 213.09 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:10:15 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:10:15 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34925 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7218.28 msec task-clock                #    0.638 CPUs utilized          
+
+      11.306497087 seconds time elapsed
+
+       6.485104000 seconds user
+       0.822427000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 195522560 177451008
+perf stat vhost:
+
+ Performance counter stats for process id '34952':
+
+           2246.58 msec task-clock                #    0.187 CPUs utilized          
+
+      12.001506651 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            115.70 msec task-clock                #    0.010 CPUs utilized          
+
+      11.351549757 seconds time elapsed
+
+       0.069722000 seconds user
+       0.081569000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1753088 233472
+Requests      [total, rate, throughput]         1478, 147.74, 147.39
+Duration      [total, attack, wait]             10.028s, 10.004s, 23.528ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.31ms, 135.631ms, 41.571ms, 187.602ms, 296.44ms, 4.493s, 4.769s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1478  
+Error Set:
+
+OSv v0.54.0-324-gf622d55c
+eth0: 192.168.122.15
+Booted up in 229.14 ms
+Cmdline: /nginx.so -c /nginx/conf/nginx-virtiofs.conf
+WARNING: af_local::ioctl(FIOASYNC) stubbed
+WARNING: fcntl(F_SETOWN) stubbed
+initgroups() stubbed
+2020/10/07 11:10:27 [emerg] 0#55: initgroups(nobody, 0) failed
+2020/10/07 11:10:27 [alert] 0#55: epoll_wait() timed out (110: Operation timed out)
+qemu-system-x86_64: terminating on signal 15 from pid 34997 (python3)
+
+ Performance counter stats for '/home/fotis/workspace/qemu/build/x86_64-softmmu/qemu-system-x86_64 -m 4G -smp 4 -vnc :1 -gdb tcp::1234,server,nowait -device virtio-blk-pci,id=blk0,drive=hd0,scsi=off,bootindex=0 -drive file=/home/fotis/workspace/ram/img/usr.img,if=none,id=hd0,cache=unsafe,aio=threads -chardev socket,id=char0,path=/tmp/vhostqemu -device vhost-user-fs-pci,queue-size=1024,chardev=char0,tag=myfs,cache-size=4G -object memory-backend-file,id=mem,size=4G,mem-path=/dev/shm,share=on -numa node,memdev=mem -netdev tap,id=hn0,br=br0,helper=/lib/qemu/qemu-bridge-helper,vhost=on -device virtio-net-pci,netdev=hn0,id=nic0 -device virtio-rng-pci -enable-kvm -cpu host,+x2apic -chardev stdio,mux=on,id=stdio,signal=off -mon chardev=stdio,mode=readline -device isa-serial,chardev=stdio':
+
+           7472.24 msec task-clock                #    0.661 CPUs utilized          
+
+      11.306950351 seconds time elapsed
+
+       6.696595000 seconds user
+       0.875875000 seconds sys
+
+
+run.py: INFO: waiting for perf to launch virtiofsd
+run.py: INFO: waiting for perf to launch qemu
+
+Memory usage stats for qemu: 193314816 171757568
+perf stat vhost:
+
+ Performance counter stats for process id '35024':
+
+           2280.75 msec task-clock                #    0.190 CPUs utilized          
+
+      12.001383232 seconds time elapsed
+
+
+
+ Performance counter stats for 'virtiofsd --socket-path=/tmp/vhostqemu -o source=/home/fotis/workspace/ram/guest -o cache=none --thread-pool-size=1':
+
+            117.97 msec task-clock                #    0.010 CPUs utilized          
+
+      11.359323015 seconds time elapsed
+
+       0.055971000 seconds user
+       0.097890000 seconds sys
+
+
+
+Memory usage stats for virtiofsd: 1634304 208896
+Requests      [total, rate, throughput]         1491, 149.08, 148.36
+Duration      [total, attack, wait]             10.05s, 10.002s, 47.995ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  1.748ms, 134.616ms, 38.963ms, 201.578ms, 295.346ms, 4.534s, 5.142s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:1491  
+Error Set:
+
