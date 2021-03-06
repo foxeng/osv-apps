@@ -1,10 +1,12 @@
-VERSION=1.17.4
+VERSION=1.19.8
 SOURCE=http://nginx.org/download/nginx-${VERSION}.tar.gz
 CONFIGURE_MODULES=--prefix=/nginx/ --with-debug --without-http_rewrite_module --with-threads --with-http_stub_status_module
 
 .PHONY: module clean
 
 SRC=upstream/nginx
+# Use nginx-ro.conf when on a read-only root file system (currenty rofs and virtio-fs)
+NGINX_CONF=$(if $(filter $(fs_type),rofs virtiofs),nginx-ro.conf,nginx.conf)
 
 module: usr.manifest
 
@@ -14,7 +16,7 @@ usr.manifest: $(SRC)/nginx.so
 	echo '/nginx/html/**: $${MODULE_DIR}/upstream/nginx/html/**' >> usr.manifest
 	echo '/nginx/logs/**: $${MODULE_DIR}/upstream/nginx/logs/**' >> usr.manifest
 	echo '/nginx/conf/**: $${MODULE_DIR}/upstream/nginx/conf/**' >> usr.manifest
-	echo '/nginx/conf/nginx.conf: $${MODULE_DIR}/patches/nginx.conf' >> usr.manifest
+	echo '/nginx/conf/nginx.conf: $${MODULE_DIR}/patches/$(NGINX_CONF)' >> usr.manifest
 
 clean:
 	rm -fr upstream
